@@ -8,7 +8,7 @@ www.pineapplesoft.co.uk
 Description
 ------------
 
-Put your mp3 files into the same folder as index.html and change their file name to a 4 digit number (e.g 0101.mp3), the fist two could represent the album number and the second two could represent the track number. Navigate to index.html and type in the 4 digit code to play that track.
+Put your mp3 files into the same folder as index.html and change their file name to a 4 digit number (e.g 0101.mp3), the first two could represent the album number and the second two could represent the track number. Navigate to index.html and type in the 4 digit code to play that track.
 
 
 
