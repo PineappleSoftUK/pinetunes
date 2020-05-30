@@ -27,7 +27,7 @@ You should have received a copy of the GNU General Public License along with thi
 Release Notes
 --------------
 
-Version 0.1.0 -- 30 May 2020
+Version 1.0.0 -- 30 May 2020
 
 + Project uploaded to GitHub
 
