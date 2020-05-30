@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <audio id="myAudio" onerror="errorFunction()">
+    </audio>
+    
+    <div id="errorText"></div>
+    
+    <input style="font-size: 112px; width: 50%;" type="number" id="textInput" onkeyup="checkNumberFieldLength(this);" autofocus>
+    <br>
+    <button onclick="pauseAudio()" type="button">Pause Audio</button>
+    <button onclick="playAudio()" type="button">Resume Audio</button>
+
+    <script>
+      var x = document.getElementById("myAudio"); 
+
+      function playAudio() { 
+        x.play(); 
+      } 
+
+      function pauseAudio() { 
+        x.pause(); 
+      }
+      
+      function checkNumberFieldLength(elem){
+        if (elem.value.length == 4){
+          document.getElementById("errorText").innerHTML = ""
+          x.setAttribute('src', elem.value + ".mp3");
+          playAudio(); 
+          document.getElementById("textInput").value
+            = "";
+        }
+      }
+      
+      function errorFunction(){
+        document.getElementById("errorText").innerHTML = "<p style='color: red;'>Invalid number!</p>"
+      }
+    </script>
+
+  </body>
+</html>
